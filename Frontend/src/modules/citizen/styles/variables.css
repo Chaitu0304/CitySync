@@ -1,0 +1,86 @@
+:root {
+  /* ===== Brand — Champagne Beige / Burgundy / Sand Gold (60 · 30 · 10) ===== */
+  --primary: #034077;        /* Dark Maroon — chrome, headers, nav */
+  --primary-dark: #002651;   /* Deep Wine — headings, hero backdrops */
+  --primary-light: #005CA4;  /* Burgundy — hovers, gradients */
+  --secondary: #005CA4;      /* Burgundy — supporting tone in hero gradients */
+  --accent: #1292EE;         /* sand gold, deepened so it reads on beige — CTA / active state */
+  --accent-dark: #005CA4;    /* gold ink — gold text on beige */
+  --accent-light: #57B0FB;   /* Sand Gold — on wine surfaces, hover lift */
+
+  /* ===== Neutrals / surfaces ===== */
+  --background: #F8FAFC;
+  --background-dim: #F1F5F9;
+  --surface: #FFFFFF;
+  --surface-raised: #FFFFFF;
+  --border: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  --text-primary: #034077;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-on-dark: #F8FAFC;
+  --text-on-dark-dim: rgba(248, 250, 252, 0.72);
+
+  /* ===== Status ===== */
+  --success: #20A66A;
+  --success-bg: #E5F7EF;
+  --warning: #B8893A;
+  --warning-bg: #D6EDFF;
+  --error: #E34D59;
+  --error-bg: #FDEAE6;
+  --info: #034077;
+  --info-bg: rgba(0, 38, 81, 0.09);
+
+  /* ===== Typography ===== */
+  --font-display: "IBM Plex Sans", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+
+  /* ===== Radius ===== */
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
+  --radius-button: 13px;
+  --radius-full: 999px;
+
+  /* ===== Shadow — deep-wine tinted ===== */
+  --shadow-sm: 0 6px 18px rgba(0, 38, 81, 0.08);
+  --shadow-md: 0 12px 30px rgba(0, 38, 81, 0.12);
+  --shadow-lg: 0 20px 50px rgba(0, 38, 81, 0.16);
+  --shadow-gold: 0 10px 25px rgba(18, 146, 238, 0.18);
+  --shadow-wine: 0 15px 35px rgba(0, 38, 81, 0.18);
+
+  /* ===== Motion ===== */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 450ms;
+
+  /* ===== Layout ===== */
+  --max-width: 1180px;
+  --nav-height: 72px;
+  --bottom-nav-height: 72px;
+  --sidebar-width: 250px;
+  --sidebar-width-collapsed: 84px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* ===== Gradients — hero / card treatments ===== */
+  --gradient-hero: linear-gradient(135deg, #034077 0%, #034077 55%, #005CA4 100%);
+  --gradient-gold: linear-gradient(135deg, #57B0FB 0%, #1292EE 100%);
+  --gradient-surface: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(248, 250, 252,0.14) 0%, rgba(248, 250, 252,0.04) 100%);
+}
+
+[data-theme='dark'] {
+  --background: #002651;
+  --background-dim: #002651;
+  --surface: #034077;
+  --surface-raised: #002651;
+  --border: #005CA4;
+  --border-strong: rgba(248, 250, 252, 0.28);
+  --text-primary: #F8FAFC;
+  --text-secondary: rgba(248, 250, 252, 0.72);
+  --text-muted: rgba(248, 250, 252, 0.5);
+}
